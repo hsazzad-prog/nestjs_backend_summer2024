@@ -28,22 +28,22 @@ A high-performance, scalable, and developer-friendly backend API built with Nest
 
 1. Clone the repository:
 
-```bash
+bash
 git clone https://github.com/your-username/nestjs-backend.git
 
 
 
-Navigate to the project directory:
+#### Navigate to the project directory:
 cd nestjs-backend
 
 
 
-Install dependencies:
+#### Install dependencies:
 npm install
 
 
 
-Running the App
+#### Running the App
 Development
 npm run start:dev
 
@@ -51,7 +51,7 @@ npm run start:dev
 
 This will start the development server and watch for changes in your files, automatically restarting the server when needed.
 
-Production
+#### Production
 npm run build
 npm run start:prod
 
@@ -61,23 +61,46 @@ This will build the production-ready version of your application and start the s
 
 Testing
 This codebase comes with a testing setup ready to go. You can run the following commands to execute tests:
+the following API endpoints:
 
-# Run unit tests
-npm run test
+# Admin API Endpoints
 
-# Run end-to-end tests
-npm run test:e2e
+## Get Admin by ID
+**Endpoint:** `GET /admin/get/{id}`  
+**Description:** Retrieve an admin by their unique ID.  
+![GET](https://img.shields.io/badge/GET-blue)
 
-# Generate test coverage report
-npm run test:cov
+## Get Admin by Name and ID
+**Endpoint:** `GET /admin/getbynameandid`  
+**Description:** Retrieve an admin by their name and ID.  
+![GET](https://img.shields.io/badge/GET-blue)
+
+## Get Admin Object
+**Endpoint:** `GET /admin/getadmin`  
+**Description:** Retrieve the admin object.  
+![GET](https://img.shields.io/badge/GET-blue)
+
+## Add a New Admin
+**Endpoint:** `POST /admin/addadmin`  
+**Description:** Add a new admin to the system.  
+![POST](https://img.shields.io/badge/POST-green)
+
+## Update an Existing Admin
+**Endpoint:** `PUT /admin/updateadmin/{id}`  
+**Description:** Update an existing admin’s details.  
+![PUT](https://img.shields.io/badge/PUT-yellow)
+
+## Add an Image
+**Endpoint:** `POST /admin/addimage`  
+**Description:** Upload and add an image.  
+![POST](https://img.shields.io/badge/POST-green)
+
+## Get an Image
+**Endpoint:** `GET /admin/getimage/{name}`  
+**Description:** Retrieve an image by its name.  
+![GET](https://img.shields.io/badge/GET-blue)
 
 
-
-Documentation
-For detailed documentation on NestJS, please refer to the official NestJS documentation.
-
-Contributing
-Contributions are welcome! Please follow the contributing guidelines to get started.
 
 ## Stay in touch
 
