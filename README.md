@@ -106,7 +106,7 @@ the following API endpoints:
 
 - Author - [Sazzad Hossain](https://cs.aiub.edu/profile/sazzad)
 - Website - [https://nestjs.com](https://nestjs.com/)
-- LinkedIn - [Profile](https://www.linkedin.com/in/hsazzad/)
+- LinkedIn - [in/hsazzad](https://www.linkedin.com/in/hsazzad/)
 
 ## License
 
