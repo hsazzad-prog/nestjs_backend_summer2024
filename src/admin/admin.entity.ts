@@ -11,7 +11,8 @@ fullname:string;
 username:string;
 @Column()
 password:string;
-
+@Column()
+filename:string;
 @OneToMany(() => Manager, manager => manager.admin)
  managers: Manager[];
 

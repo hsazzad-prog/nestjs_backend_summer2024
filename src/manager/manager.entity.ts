@@ -15,6 +15,6 @@ email:string;
 
 @ManyToOne(() => AdminProfile, admin => admin.managers)
  
-admin: Admin;
+admin: AdminProfile;
 
 }

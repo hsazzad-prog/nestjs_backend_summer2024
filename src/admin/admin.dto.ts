@@ -5,12 +5,18 @@ export class AdminDTO{
     @Matches(/^[A-Za-z]+$/,{message: "Please enter a valid name"})
     fullname:string;
 
-    @IsNotEmpty()
+    //@IsNotEmpty()
     id:number;
     
     password:string
     @IsEmail()
     username:string;
+    filename:string;
+}
+export class AdminLoginDTO{
+    @IsEmail()
+    username:string;
+    password:string;
 }
 
 export class AdminUpdateDTO{
